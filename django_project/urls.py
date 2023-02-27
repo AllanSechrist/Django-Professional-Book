@@ -5,8 +5,7 @@ urlpatterns = [
     #Admin
     path("admin/", admin.site.urls),
     #Users
-    path("accounts/", include("django.contrib.auth.urls")),
-    #Local
-    path("accounts/", include("accounts.urls")),
+    path("accounts/", include("allauth.urls")),
+    #LocaL
     path("", include("pages.urls")),
 ]
